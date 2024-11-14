@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Keyce</title>
+</head>
+
+<body>
+<h1 th:text="${message}">Message par défaut</h1>
+<ul >
+    <li th:each="car : ${cars}" th:text="${car.brand} + ' ' + ${car.model} + ' ' + ${car.releaseDate} + ' ' + ${car.status}">default</li>
+</ul>
+</body>
+
+</html>
